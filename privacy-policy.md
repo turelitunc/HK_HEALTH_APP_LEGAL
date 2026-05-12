@@ -1,6 +1,6 @@
 # Privacy Policy — HK Health App
 
-_Last updated: 5 May 2026_
+_Last updated: 12 May 2026_
 
 HK Health ("the app", "we") is a wellness companion that helps you log meals, water, walks and short habits through a chat interface. This policy explains what we collect, how we use it, and the rights you have.
 
@@ -32,14 +32,21 @@ If you connect a health platform from Settings, we read **only**:
 
 We **never** read heart-rate, sleep stages, blood-pressure, glucose, weight, or any data you have not explicitly granted.
 
-### e) Diagnostics
+### e) Approximate location (optional, on-demand only)
+- **Only** when you tap "Share my location" after asking the assistant to recommend a nearby place.
+- We request **approximate** location (city/neighbourhood level), round it to ~110 m, and send it **once** with that one chat message so the assistant can name real places near you.
+- We **do not** store your location in any database, we **do not** track you in the background, and we **do not** keep a history of where you've been. After that single reply it is discarded.
+- You can decline; the assistant will still help using general knowledge.
+
+### f) Diagnostics
 - App version, platform (iOS / Android), anonymous error logs.
 - Used solely to fix bugs; never sold or shared.
 
 ## 2. How we use your data
 
 - **Personalize the assistant** — show macros, calorie progress, daily streaks.
-- **Generate replies** — send your message + relevant context to **Google's Gemini API** (model used: gemini-2.5-flash / gemini-2.5-pro). Google processes the request and returns text. We have configured the request so Google **does not retain** prompts for model training.
+- **Generate replies** — send your message + relevant context to **Google's Gemini API** (current model: gemini-3.1-flash-lite). Google processes the request and returns text. We have configured the request so Google **does not retain** prompts for model training.
+- **Find nearby places** — when (and only when) you share your location, the approximate coordinates are included in that single Gemini request, which may use Google's web-search grounding to surface real venues near you. The coordinates are not stored.
 - **Local notifications** — water + evening check-in reminders, scheduled on-device.
 - **Improve reliability** — anonymous error reporting.
 
@@ -91,7 +98,7 @@ For privacy questions or to exercise any of the above rights:
 
 # Gizlilik Politikası — HK Health App
 
-_Son güncelleme: 5 Mayıs 2026_
+_Son güncelleme: 12 Mayıs 2026_
 
 HK Health ("uygulama", "biz"), sohbet üzerinden öğün, su, yürüyüş ve kısa alışkanlık kayıtlarını destekleyen bir wellness asistanıdır. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve sahip olduğun hakları açıklar.
 
@@ -123,7 +130,13 @@ Ayarlar'dan bağlarsan **yalnızca**:
 
 okunur. Kalp atış, uyku evreleri, tansiyon, kan şekeri, kilo veya açıkça izin vermediğin **HİÇBİR** veri okunmaz.
 
-### e) Hata kayıtları
+### e) Yaklaşık konum (opsiyonel, sadece talep üzerine)
+- **Yalnızca** asistandan yakındaki bir yer önermesini istedikten sonra "Konumumu paylaş" butonuna bastığında.
+- **Yaklaşık** konum (semt/şehir seviyesi) alır, ~110 m'ye yuvarlar ve **tek bir** chat mesajıyla birlikte yollarız ki asistan yakınındaki gerçek yerleri söyleyebilsin.
+- Konumunu **hiçbir veritabanında saklamayız**, arka planda **takip etmeyiz**, nerede olduğunun **geçmişini tutmayız**. O tek cevaptan sonra silinir.
+- Reddedebilirsin; asistan genel bilgisiyle yine yardımcı olur.
+
+### f) Hata kayıtları
 - Uygulama sürümü, platform (iOS / Android), anonim hata günlükleri.
 - Sadece bug fix için; satılmaz, paylaşılmaz.
 
